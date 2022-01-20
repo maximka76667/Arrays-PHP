@@ -12,15 +12,18 @@
             'neo' => array(
                 'nombre' => "Alfredo", 
                 'fechaNacimiento' => "12/02/1980", 
-                'telefono' => "670123456"), 
+                'telefono' => "670123456"
+            ), 
             'fran1980' => array(
                 'nombre' => "Francisco", 
                 'fechaNacimiento' => "20/05/1983", 
-                'telefono' => "653234965"),
+                'telefono' => "653234965"
+            ),
             'bea' => array(
                 'nombre' => "Beatriz", 
                 'fechaNacimiento' => "14/08/1975", 
-                'telefono' => "663724512")
+                'telefono' => "663724512"
+            )
         );
     
         // Con foreach
@@ -29,9 +32,9 @@
         }
 
         // Sin foreach
-        echo $nombres['bea'][0] . "<br>";
-        echo $nombres['bea'][1] . "<br>";
-        echo $nombres['bea'][2] . "<br>";
+        echo $nombres['bea']['nombre'] . "<br>";
+        echo $nombres['bea']['fechaNacimiento'] . "<br>";
+        echo $nombres['bea']['telefono'] . "<br>";
     ?>
 </body>
 </html>

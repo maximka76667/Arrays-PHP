@@ -8,24 +8,32 @@
 </head>
 <body>
     <?php
+        function createArray($nombre, $fecha, $tlf) {
+            return array(
+                'nombre' => $nombre, 
+                'fechaNacimiento' => $fecha, 
+                'telefono' => $tlf
+            );
+        }
+
         $nombres = array(
-            'neo' => array(
-                'nombre' => "Alfredo", 
-                'fechaNacimiento' => "12/02/1980", 
-                'telefono' => "670123456"
+            'neo' => createArray(
+                "Alfredo", 
+                "12/02/1980", 
+                "670123456"
             ), 
-            'fran1980' => array(
-                'nombre' => "Francisco", 
-                'fechaNacimiento' => "20/05/1983", 
-                'telefono' => "653234965"
+            'fran1980' => createArray(
+                "Francisco", 
+                "20/05/1983", 
+                "653234965"
             ),
-            'bea' => array(
-                'nombre' => "Beatriz", 
-                'fechaNacimiento' => "14/08/1975", 
-                'telefono' => "663724512"
+            'bea' => createArray(
+                "Beatriz", 
+                "14/08/1975", 
+                "663724512"
             )
         );
-    
+
         // Con foreach
         foreach($nombres['bea'] as $nombre) {
             echo "$nombre <br>";

@@ -9,9 +9,18 @@
 <body>
     <?php
         $nombres = array(
-            'neo' => array("Alfredo", "12/02/1980", "670123456"), 
-            'fran1980' => array("Francisco", " 20/05/1983", "653234965"),
-            'bea' => array("Beatriz", "14/08/1975", "663724512")
+            'neo' => array(
+                'nombre' => "Alfredo", 
+                'fechaNacimiento' => "12/02/1980", 
+                'telefono' => "670123456"), 
+            'fran1980' => array(
+                'nombre' => "Francisco", 
+                'fechaNacimiento' => "20/05/1983", 
+                'telefono' => "653234965"),
+            'bea' => array(
+                'nombre' => "Beatriz", 
+                'fechaNacimiento' => "14/08/1975", 
+                'telefono' => "663724512")
         );
     
         // Con foreach

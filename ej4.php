@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
 </head>
 <body>
     <?php
-        $nombres = [
+        $nombres = array(
             'neo' => "Alfredo", 
             'fran1980' => "Francisco",
             'bea' => "Beatriz"
-        ];
+        );
 
         foreach($nombres as $nick => $nombre) {
             echo "$nick: $nombre <br>";
